@@ -38,3 +38,28 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.image {
+  height: 75%;
+  width: 75%;
+}
+.score {
+  height: 50%;
+  width: 50%;
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
+.hideimage {
+  visibility: hidden;
+}
+
+.score:hover {
+  cursor:pointer;
+}
+
+.darkblue {
+  background-color: darkblue;
+}
