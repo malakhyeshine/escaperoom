@@ -33,7 +33,7 @@ function closeAll() {
     clearTimeout(timer4);
     clearTimeout(timer5);
     clearTimeout(timer6);
-    document.location.href = "https://carolinaalfaro.github.io/Phase_8/escape_phase4.html";
+    document.location.href = "https://carolinaalfaro.github.io/phase_08/escape_phase4.html";
   }
   else {
     console.log("no match")
