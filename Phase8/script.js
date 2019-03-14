@@ -11,7 +11,7 @@ j = document.getElementById("circle4");
 k = document.getElementById("circle5");
 l = document.getElementById("circle6");
 var time = 3000;
-
+//after checking if all of the aliens are hidden then it will cancel the javascript function I had set on a timer for each of the aliens once they are clicked, then changes them blue sending you to the next page.
 function closeAll() {
   if (a.classList.contains("hideimage") && b.classList.contains("hideimage") && c.classList.contains("hideimage") && d.classList.contains("hideimage") && e.classList.contains("hideimage") && f.classList.contains("hideimage")) {
     console.log("match");
@@ -59,7 +59,8 @@ function darkBlue(){
 function reappearImage(el) {
   a.classList.remove('hideimage');
 }
-
+//I have a variable for my timer so that when I cancel it I can call this one specifically
+//The Set Timeout will delay a specified function for a limited amount of time, I have my time as a variable so that I can change it once a certain condition is met
 function hideImage(el) {
   a.classList.add('hideimage');
   timer1 = setTimeout (reappearImage, time);
@@ -68,7 +69,7 @@ function hideImage(el) {
 function reappearImage2(el) {
   b.classList.remove('hideimage');
 }
-
+//This is how the javascript determines if you are going in the right order of aliens, It will check if the previous alien in the order is hidden then allow you to hide this one while also giving you half a secon more to get the next one.
 function hideImage2(el) {
   if (a.classList.contains("hideimage")) {
     console.log("its hidden");
